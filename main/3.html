@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page 3</title>
+</head>
+<body>
+
+	<link rel="stylesheet" type="text/css" href="3.css">
+
+
+	<!--full browser window, raster graphic, duration change animation-->
+
+	<div id='containter'>
+
+
+		
+	</div>
+
+
+
+	<div class = 'group'>
+		<video controls autoplay muted loop src="whale.mp4" type = 'video/mp4' ></video>
+
+		<div id = 'one'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>
+
+		<div id = 'two'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>
+		<div id = 'three'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>
+		<div id = 'four'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>
+		<div id = 'five'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>
+		<div id = 'six'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>
+		<div id = 'seven'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>
+
+		<div id = 'eight'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>
+		<div id = 'nine'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>
+
+		<div id = 'ten'>
+			<img src="whale.svg" style=" width: 100px; height: 100px;">
+		</div>				
+
+	</div>
+
+	<!--<script src="3.js"></script>-->
+	<script type="text/javascript">
+		let B1 = document.querySelector('.group')
+		B1.style.animationName = 'example'
+
+		document.querySelector('.b3').style.animationName = 'mymove'
+		document.querySelector('.b6').style.animationName = 'mymove'
+
+
+		//Part 1: At least one JavaScript function, defined by the student
+		//Part 1: At least one JavaScript event listener to respond to a user action
+		const allb = document.querySelector('.foods')
+		const bbs = document.querySelector('.foods').children
+
+
+		for (let i = 0; i<bbs.length; i++){
+			bbs[i].onmouseover=function(event){
+				bbs[i].style.opacity = 0.5
+			}
+
+			bbs[i].onmouseout=function(event){
+				bbs[i].style.opacity = 1
+			}
+		}	
+	</script>
+
+	
+
+
+
+
+
+</body>
+</html>
+
+
+
+
